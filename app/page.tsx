@@ -6,7 +6,7 @@ import Link from 'next/link';
 import About from './components/About';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
-import { containerVariants, fadeIn, itemVariants } from './constants';
+import { containerVariants, itemVariants } from './constants';
 
 export default function Home() {
 
