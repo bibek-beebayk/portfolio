@@ -91,7 +91,7 @@ export default function Home() {
               <motion.a
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:your.email@example.com"
+                href="mailto:beebayk0001@gmail.com"
                 className="group relative bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden px-8 py-4"
               >
                 <div className="flex items-center space-x-3">
