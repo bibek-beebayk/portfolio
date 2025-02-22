@@ -33,25 +33,29 @@ function Projects() {
             description: "An online quiz platform made with Django stack.",
             image: "/api/placeholder/400/250",
             link: "https://quiznfacts.com/",
-            // github: "https://quiznfacts.com/"
+            // github: "https://quiznfacts.com/",
+            tags: ["Django", "HTML", "CSS", "JavaScript"]
         },
         {
             title: "Worldstories",
             description: "A place to read stories and folklores from around the world. Developed with Django.",
             image: "/api/placeholder/400/250",
-            link: "https://worldstories.net"
+            link: "https://worldstories.net",
+            tags: ["Django", "HTML", "CSS", "JavaScript"]
         },
         {
             title: "Al Noor Website",
             description: "Website for a manpower company made with Django and React.Js.",
             image: "/api/placeholder/400/250",
-            link: "https://alnooroverseas.com"
+            link: "https://alnooroverseas.com",
+            tags: ["Django", "React.js", "Tailwind CSS"]
         },
         {
             title: "Kalodhunga Creation Website",
             description: "Website for a software company made with Django and Next.Js.",
             image: "/api/placeholder/400/250",
-            link: "https://kalodhunga.com"
+            link: "https://kalodhunga.com",
+            tags: ["Django", "Next.js", "Tailwind CSS"]
         }
     ]
 
@@ -64,14 +68,14 @@ function Projects() {
     //     return icons[title] || <LockIcon className="w-8 h-8 text-white" />;
     // };
 
-    const getProjectTags = (title: string): string[] => {
-        const tags: ProjectTags = {
-            'E-Commerce Platform': ['React', 'Node.js', 'MongoDB', 'Stripe'],
-            'Task Management App': ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
-            'Portfolio Website': ['React', 'Tailwind CSS', 'Framer Motion']
-        };
-        return tags[title] || ['HTML', 'CSS', 'JavaScript'];
-    };
+    // const getProjectTags = (title: string): string[] => {
+    //     const tags: ProjectTags = {
+    //         'E-Commerce Platform': ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    //         'Task Management App': ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
+    //         'Portfolio Website': ['React', 'Tailwind CSS', 'Framer Motion']
+    //     };
+    //     return tags[title] || ['HTML', 'CSS', 'JavaScript'];
+    // };
     return (
         <div id='projects'>{/* Projects Section */}
             <motion.section
@@ -142,7 +146,7 @@ function Projects() {
 
                                     {/* Tech Stack Tags */}
                                     <div className="flex flex-wrap gap-2 mb-6">
-                                        {getProjectTags(project.title).map((tag, i) => (
+                                        {project.tags.map((tag, i) => (
                                             <span
                                                 key={i}
                                                 className="text-xs px-3 py-1 bg-white/5 rounded-full text-gray-300"
